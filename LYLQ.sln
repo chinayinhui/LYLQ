@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LYLQ.WinUI", "LYLQ.WinUI\LYLQ.WinUI.csproj", "{50B4859A-AEC1-4298-8A53-AC0C425A32B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LYLQ.Business", "LYLQ.Business\LYLQ.Business.csproj", "{F6271E80-33C7-4770-B503-2CD0EE2DBE1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LYLQ.SqlServer", "LYLQ.DB\LYLQ.SqlServer.csproj", "{DC06DB4B-4D8B-4CBD-8020-03F134B21A5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LYLQ.Helper", "LYLQ.Helper\LYLQ.Helper.csproj", "{AD6CB4B9-9612-4F33-9D58-4A6DC9B97A43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LYLQ.SqLite", "LYLQ.SqlLite\LYLQ.SqLite.csproj", "{DF0A0EA7-BF60-41F3-BD07-1D9C3BC4583A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LYLQ.DACCache", "LYLQ.Cache\LYLQ.DACCache.csproj", "{9C1D3508-37CE-473E-935F-9FEABBEE8965}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50B4859A-AEC1-4298-8A53-AC0C425A32B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B4859A-AEC1-4298-8A53-AC0C425A32B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B4859A-AEC1-4298-8A53-AC0C425A32B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B4859A-AEC1-4298-8A53-AC0C425A32B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6271E80-33C7-4770-B503-2CD0EE2DBE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6271E80-33C7-4770-B503-2CD0EE2DBE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6271E80-33C7-4770-B503-2CD0EE2DBE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6271E80-33C7-4770-B503-2CD0EE2DBE1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC06DB4B-4D8B-4CBD-8020-03F134B21A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC06DB4B-4D8B-4CBD-8020-03F134B21A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC06DB4B-4D8B-4CBD-8020-03F134B21A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC06DB4B-4D8B-4CBD-8020-03F134B21A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD6CB4B9-9612-4F33-9D58-4A6DC9B97A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6CB4B9-9612-4F33-9D58-4A6DC9B97A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD6CB4B9-9612-4F33-9D58-4A6DC9B97A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD6CB4B9-9612-4F33-9D58-4A6DC9B97A43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0A0EA7-BF60-41F3-BD07-1D9C3BC4583A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0A0EA7-BF60-41F3-BD07-1D9C3BC4583A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0A0EA7-BF60-41F3-BD07-1D9C3BC4583A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0A0EA7-BF60-41F3-BD07-1D9C3BC4583A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C1D3508-37CE-473E-935F-9FEABBEE8965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C1D3508-37CE-473E-935F-9FEABBEE8965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C1D3508-37CE-473E-935F-9FEABBEE8965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C1D3508-37CE-473E-935F-9FEABBEE8965}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
