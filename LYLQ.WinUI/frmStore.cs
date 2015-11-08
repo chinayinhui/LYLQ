@@ -397,8 +397,8 @@ namespace LYLQ.WinUI
                 {
                     var fileName = saveFileDialog.FileName.ToString();
                     _stockModel.ExportToExcel(fileName, inStoreModels, this.dtpBegin.Value.ToShortDateString());
-                }
-                MessageBox.Show("导出库存数据成功！");
+                    MessageBox.Show("导出库存数据成功！");
+                }                
             }
             else
             {

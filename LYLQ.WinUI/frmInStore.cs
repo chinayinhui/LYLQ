@@ -789,8 +789,8 @@ namespace LYLQ.WinUI
                 {
                     var fileName = saveFileDialog.FileName.ToString();
                     _inStoreModel.ExportToExcel(fileName, inStoreModels, this.dtpBegin.Value.ToShortDateString(), this.dptEnd.Value.ToShortDateString());
-                }
-                MessageBox.Show("导出成功！");
+                    MessageBox.Show("导出成功！");
+                }                
             }
             else
             {

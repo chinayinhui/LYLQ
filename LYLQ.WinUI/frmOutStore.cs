@@ -1012,8 +1012,8 @@ namespace LYLQ.WinUI
                 {
                     var fileName = saveFileDialog.FileName.ToString();
                     _outStoreModel.ExportToOutStoreExcel(fileName, outStoreModels, this.dtpBegin.Value.ToShortDateString(), this.dptEnd.Value.ToShortDateString());
-                }
-                MessageBox.Show("导出出库记录成功！");
+                    MessageBox.Show("导出出库记录成功！");
+                }                
             }
             else
             {

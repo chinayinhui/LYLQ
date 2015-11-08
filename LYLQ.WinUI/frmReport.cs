@@ -428,8 +428,8 @@ namespace LYLQ.WinUI
                 {
                     var fileName = saveFileDialog.FileName.ToString();
                     _outStoreModel.ExportToReportExcel(fileName, outStoreModels, this.dtpBegin.Value.ToShortDateString(), this.dptEnd.Value.ToShortDateString());
-                }
-                MessageBox.Show("导出统计数据成功！");
+                    MessageBox.Show("导出统计数据成功！");
+                }                
             }
             else
             {
