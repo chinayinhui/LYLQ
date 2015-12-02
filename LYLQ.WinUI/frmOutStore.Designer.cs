@@ -56,18 +56,20 @@
             this.btnOTHERStoreOut = new System.Windows.Forms.Button();
             this.grdOther = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btnExport = new System.Windows.Forms.Button();
-            this.cboDepartment = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnQueryStoreDetails = new System.Windows.Forms.Button();
-            this.cboOperator = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cboChildType = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.cboOperator = new System.Windows.Forms.ComboBox();
             this.cboType = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dptEnd = new System.Windows.Forms.DateTimePicker();
+            this.cboDepartment = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.dtpBegin = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.sptcOutStore = new System.Windows.Forms.SplitContainer();
@@ -107,6 +109,8 @@
             this.sptOther.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdOther)).BeginInit();
             this.panel1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sptcOutStore)).BeginInit();
             this.sptcOutStore.Panel1.SuspendLayout();
@@ -129,7 +133,7 @@
             this.grdDJB.Margin = new System.Windows.Forms.Padding(0);
             this.grdDJB.Name = "grdDJB";
             this.grdDJB.RowTemplate.Height = 23;
-            this.grdDJB.Size = new System.Drawing.Size(476, 620);
+            this.grdDJB.Size = new System.Drawing.Size(476, 678);
             this.grdDJB.TabIndex = 3;
             this.grdDJB.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.grdDJB_CellFormatting);
             this.grdDJB.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.grdDJB_CellValidating);
@@ -138,7 +142,7 @@
             // 
             this.btnDJBStoreOut.Location = new System.Drawing.Point(403, 4);
             this.btnDJBStoreOut.Name = "btnDJBStoreOut";
-            this.btnDJBStoreOut.Size = new System.Drawing.Size(70, 28);
+            this.btnDJBStoreOut.Size = new System.Drawing.Size(70, 30);
             this.btnDJBStoreOut.TabIndex = 6;
             this.btnDJBStoreOut.Text = "出 库";
             this.btnDJBStoreOut.UseVisualStyleBackColor = true;
@@ -147,9 +151,9 @@
             // cboDJBDpts
             // 
             this.cboDJBDpts.FormattingEnabled = true;
-            this.cboDJBDpts.Location = new System.Drawing.Point(253, 7);
+            this.cboDJBDpts.Location = new System.Drawing.Point(253, 8);
             this.cboDJBDpts.Name = "cboDJBDpts";
-            this.cboDJBDpts.Size = new System.Drawing.Size(144, 20);
+            this.cboDJBDpts.Size = new System.Drawing.Size(144, 21);
             this.cboDJBDpts.TabIndex = 7;
             this.cboDJBDpts.SelectedIndexChanged += new System.EventHandler(this.cboDJBDpts_SelectedIndexChanged);
             // 
@@ -171,7 +175,7 @@
             this.tabContainer.Location = new System.Drawing.Point(0, 0);
             this.tabContainer.Name = "tabContainer";
             this.tabContainer.SelectedIndex = 0;
-            this.tabContainer.Size = new System.Drawing.Size(484, 690);
+            this.tabContainer.Size = new System.Drawing.Size(484, 748);
             this.tabContainer.TabIndex = 2;
             // 
             // tabZKPZ
@@ -180,7 +184,7 @@
             this.tabZKPZ.Location = new System.Drawing.Point(4, 22);
             this.tabZKPZ.Name = "tabZKPZ";
             this.tabZKPZ.Padding = new System.Windows.Forms.Padding(3);
-            this.tabZKPZ.Size = new System.Drawing.Size(476, 664);
+            this.tabZKPZ.Size = new System.Drawing.Size(476, 722);
             this.tabZKPZ.TabIndex = 0;
             this.tabZKPZ.Text = "重空凭证";
             this.tabZKPZ.UseVisualStyleBackColor = true;
@@ -202,24 +206,24 @@
             // sptZKPZ.Panel2
             // 
             this.sptZKPZ.Panel2.Controls.Add(this.grdZKPZ);
-            this.sptZKPZ.Size = new System.Drawing.Size(470, 658);
+            this.sptZKPZ.Size = new System.Drawing.Size(470, 716);
             this.sptZKPZ.SplitterDistance = 40;
             this.sptZKPZ.TabIndex = 3;
             // 
             // cboZKPZDpts
             // 
             this.cboZKPZDpts.FormattingEnabled = true;
-            this.cboZKPZDpts.Location = new System.Drawing.Point(238, 9);
+            this.cboZKPZDpts.Location = new System.Drawing.Point(224, 12);
             this.cboZKPZDpts.Name = "cboZKPZDpts";
-            this.cboZKPZDpts.Size = new System.Drawing.Size(153, 20);
+            this.cboZKPZDpts.Size = new System.Drawing.Size(153, 21);
             this.cboZKPZDpts.TabIndex = 4;
             this.cboZKPZDpts.SelectedIndexChanged += new System.EventHandler(this.cboZKPZDpts_SelectedIndexChanged);
             // 
             // btnZKPZStoreOut
             // 
-            this.btnZKPZStoreOut.Location = new System.Drawing.Point(397, 3);
+            this.btnZKPZStoreOut.Location = new System.Drawing.Point(397, 8);
             this.btnZKPZStoreOut.Name = "btnZKPZStoreOut";
-            this.btnZKPZStoreOut.Size = new System.Drawing.Size(70, 28);
+            this.btnZKPZStoreOut.Size = new System.Drawing.Size(70, 30);
             this.btnZKPZStoreOut.TabIndex = 3;
             this.btnZKPZStoreOut.Text = "出 库";
             this.btnZKPZStoreOut.UseVisualStyleBackColor = true;
@@ -235,7 +239,7 @@
             this.grdZKPZ.Margin = new System.Windows.Forms.Padding(0);
             this.grdZKPZ.Name = "grdZKPZ";
             this.grdZKPZ.RowTemplate.Height = 23;
-            this.grdZKPZ.Size = new System.Drawing.Size(470, 614);
+            this.grdZKPZ.Size = new System.Drawing.Size(470, 672);
             this.grdZKPZ.TabIndex = 1;
             this.grdZKPZ.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.grdZKPZ_CellFormatting);
             this.grdZKPZ.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.grdZKPZ_CellValidating);
@@ -246,7 +250,7 @@
             this.tabNZKPZ.Location = new System.Drawing.Point(4, 22);
             this.tabNZKPZ.Name = "tabNZKPZ";
             this.tabNZKPZ.Padding = new System.Windows.Forms.Padding(3);
-            this.tabNZKPZ.Size = new System.Drawing.Size(476, 664);
+            this.tabNZKPZ.Size = new System.Drawing.Size(476, 722);
             this.tabNZKPZ.TabIndex = 1;
             this.tabNZKPZ.Text = "非重空凭证";
             this.tabNZKPZ.UseVisualStyleBackColor = true;
@@ -268,24 +272,24 @@
             // sptNZKPZ.Panel2
             // 
             this.sptNZKPZ.Panel2.Controls.Add(this.grdNZKPZ);
-            this.sptNZKPZ.Size = new System.Drawing.Size(470, 658);
+            this.sptNZKPZ.Size = new System.Drawing.Size(470, 716);
             this.sptNZKPZ.SplitterDistance = 40;
             this.sptNZKPZ.TabIndex = 5;
             // 
             // cboNZKPZDpts
             // 
             this.cboNZKPZDpts.FormattingEnabled = true;
-            this.cboNZKPZDpts.Location = new System.Drawing.Point(238, 9);
+            this.cboNZKPZDpts.Location = new System.Drawing.Point(238, 10);
             this.cboNZKPZDpts.Name = "cboNZKPZDpts";
-            this.cboNZKPZDpts.Size = new System.Drawing.Size(144, 20);
+            this.cboNZKPZDpts.Size = new System.Drawing.Size(144, 21);
             this.cboNZKPZDpts.TabIndex = 6;
             this.cboNZKPZDpts.SelectedIndexChanged += new System.EventHandler(this.cboNZKPZDpts_SelectedIndexChanged);
             // 
             // btnNZKPZStoreOut
             // 
-            this.btnNZKPZStoreOut.Location = new System.Drawing.Point(397, 6);
+            this.btnNZKPZStoreOut.Location = new System.Drawing.Point(397, 7);
             this.btnNZKPZStoreOut.Name = "btnNZKPZStoreOut";
-            this.btnNZKPZStoreOut.Size = new System.Drawing.Size(70, 28);
+            this.btnNZKPZStoreOut.Size = new System.Drawing.Size(70, 30);
             this.btnNZKPZStoreOut.TabIndex = 5;
             this.btnNZKPZStoreOut.Text = "出 库";
             this.btnNZKPZStoreOut.UseVisualStyleBackColor = true;
@@ -301,7 +305,7 @@
             this.grdNZKPZ.Margin = new System.Windows.Forms.Padding(0);
             this.grdNZKPZ.Name = "grdNZKPZ";
             this.grdNZKPZ.RowTemplate.Height = 23;
-            this.grdNZKPZ.Size = new System.Drawing.Size(470, 614);
+            this.grdNZKPZ.Size = new System.Drawing.Size(470, 672);
             this.grdNZKPZ.TabIndex = 2;
             this.grdNZKPZ.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.grdNZKPZ_CellFormatting);
             this.grdNZKPZ.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.grdNZKPZ_CellValidating);
@@ -311,7 +315,7 @@
             this.tabDJB.Controls.Add(this.sptDJB);
             this.tabDJB.Location = new System.Drawing.Point(4, 22);
             this.tabDJB.Name = "tabDJB";
-            this.tabDJB.Size = new System.Drawing.Size(476, 664);
+            this.tabDJB.Size = new System.Drawing.Size(476, 722);
             this.tabDJB.TabIndex = 2;
             this.tabDJB.Text = "登记薄";
             this.tabDJB.UseVisualStyleBackColor = true;
@@ -333,7 +337,7 @@
             // sptDJB.Panel2
             // 
             this.sptDJB.Panel2.Controls.Add(this.grdDJB);
-            this.sptDJB.Size = new System.Drawing.Size(476, 664);
+            this.sptDJB.Size = new System.Drawing.Size(476, 722);
             this.sptDJB.SplitterDistance = 40;
             this.sptDJB.TabIndex = 0;
             // 
@@ -342,7 +346,7 @@
             this.tabJJ.Controls.Add(this.sptJJ);
             this.tabJJ.Location = new System.Drawing.Point(4, 22);
             this.tabJJ.Name = "tabJJ";
-            this.tabJJ.Size = new System.Drawing.Size(476, 664);
+            this.tabJJ.Size = new System.Drawing.Size(476, 722);
             this.tabJJ.TabIndex = 3;
             this.tabJJ.Text = "机具";
             this.tabJJ.UseVisualStyleBackColor = true;
@@ -364,24 +368,24 @@
             // sptJJ.Panel2
             // 
             this.sptJJ.Panel2.Controls.Add(this.grdJJ);
-            this.sptJJ.Size = new System.Drawing.Size(476, 664);
+            this.sptJJ.Size = new System.Drawing.Size(476, 722);
             this.sptJJ.SplitterDistance = 40;
             this.sptJJ.TabIndex = 7;
             // 
             // cboJJDpts
             // 
             this.cboJJDpts.FormattingEnabled = true;
-            this.cboJJDpts.Location = new System.Drawing.Point(253, 9);
+            this.cboJJDpts.Location = new System.Drawing.Point(253, 10);
             this.cboJJDpts.Name = "cboJJDpts";
-            this.cboJJDpts.Size = new System.Drawing.Size(144, 20);
+            this.cboJJDpts.Size = new System.Drawing.Size(144, 21);
             this.cboJJDpts.TabIndex = 8;
             this.cboJJDpts.SelectedIndexChanged += new System.EventHandler(this.cboJJDpts_SelectedIndexChanged);
             // 
             // btnJJStoreOut
             // 
-            this.btnJJStoreOut.Location = new System.Drawing.Point(401, 7);
+            this.btnJJStoreOut.Location = new System.Drawing.Point(401, 8);
             this.btnJJStoreOut.Name = "btnJJStoreOut";
-            this.btnJJStoreOut.Size = new System.Drawing.Size(70, 28);
+            this.btnJJStoreOut.Size = new System.Drawing.Size(70, 30);
             this.btnJJStoreOut.TabIndex = 7;
             this.btnJJStoreOut.Text = "出 库";
             this.btnJJStoreOut.UseVisualStyleBackColor = true;
@@ -397,7 +401,7 @@
             this.grdJJ.Margin = new System.Windows.Forms.Padding(0);
             this.grdJJ.Name = "grdJJ";
             this.grdJJ.RowTemplate.Height = 23;
-            this.grdJJ.Size = new System.Drawing.Size(476, 620);
+            this.grdJJ.Size = new System.Drawing.Size(476, 678);
             this.grdJJ.TabIndex = 3;
             this.grdJJ.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.grdJJ_CellFormatting);
             this.grdJJ.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.grdJJ_CellValidating);
@@ -407,7 +411,7 @@
             this.tabOther.Controls.Add(this.sptOther);
             this.tabOther.Location = new System.Drawing.Point(4, 22);
             this.tabOther.Name = "tabOther";
-            this.tabOther.Size = new System.Drawing.Size(476, 664);
+            this.tabOther.Size = new System.Drawing.Size(476, 722);
             this.tabOther.TabIndex = 4;
             this.tabOther.Text = "其它";
             this.tabOther.UseVisualStyleBackColor = true;
@@ -429,24 +433,24 @@
             // sptOther.Panel2
             // 
             this.sptOther.Panel2.Controls.Add(this.grdOther);
-            this.sptOther.Size = new System.Drawing.Size(476, 664);
+            this.sptOther.Size = new System.Drawing.Size(476, 722);
             this.sptOther.SplitterDistance = 40;
             this.sptOther.TabIndex = 8;
             // 
             // cboOTHERDpts
             // 
             this.cboOTHERDpts.FormattingEnabled = true;
-            this.cboOTHERDpts.Location = new System.Drawing.Point(253, 11);
+            this.cboOTHERDpts.Location = new System.Drawing.Point(253, 12);
             this.cboOTHERDpts.Name = "cboOTHERDpts";
-            this.cboOTHERDpts.Size = new System.Drawing.Size(144, 20);
+            this.cboOTHERDpts.Size = new System.Drawing.Size(144, 21);
             this.cboOTHERDpts.TabIndex = 9;
             this.cboOTHERDpts.SelectedIndexChanged += new System.EventHandler(this.cboOTHERDpts_SelectedIndexChanged);
             // 
             // btnOTHERStoreOut
             // 
-            this.btnOTHERStoreOut.Location = new System.Drawing.Point(403, 7);
+            this.btnOTHERStoreOut.Location = new System.Drawing.Point(403, 8);
             this.btnOTHERStoreOut.Name = "btnOTHERStoreOut";
-            this.btnOTHERStoreOut.Size = new System.Drawing.Size(70, 28);
+            this.btnOTHERStoreOut.Size = new System.Drawing.Size(70, 30);
             this.btnOTHERStoreOut.TabIndex = 8;
             this.btnOTHERStoreOut.Text = "出 库";
             this.btnOTHERStoreOut.UseVisualStyleBackColor = true;
@@ -462,120 +466,120 @@
             this.grdOther.Margin = new System.Windows.Forms.Padding(0);
             this.grdOther.Name = "grdOther";
             this.grdOther.RowTemplate.Height = 23;
-            this.grdOther.Size = new System.Drawing.Size(476, 620);
+            this.grdOther.Size = new System.Drawing.Size(476, 678);
             this.grdOther.TabIndex = 3;
             this.grdOther.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.grdOther_CellFormatting);
             this.grdOther.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.grdOther_CellValidating);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnExport);
-            this.panel1.Controls.Add(this.cboDepartment);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.btnQueryStoreDetails);
-            this.panel1.Controls.Add(this.cboOperator);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.cboChildType);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.cboType);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.dptEnd);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.dtpBegin);
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(-158, 0);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1036, 50);
+            this.panel1.Size = new System.Drawing.Size(878, 90);
             this.panel1.TabIndex = 48;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnExport);
+            this.groupBox3.Controls.Add(this.btnQueryStoreDetails);
+            this.groupBox3.Location = new System.Drawing.Point(788, 3);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(90, 75);
+            this.groupBox3.TabIndex = 61;
+            this.groupBox3.TabStop = false;
             // 
             // btnExport
             // 
-            this.btnExport.Location = new System.Drawing.Point(965, 9);
+            this.btnExport.Location = new System.Drawing.Point(15, 12);
             this.btnExport.Name = "btnExport";
-            this.btnExport.Size = new System.Drawing.Size(70, 28);
+            this.btnExport.Size = new System.Drawing.Size(69, 26);
             this.btnExport.TabIndex = 59;
             this.btnExport.Text = "导 出";
             this.btnExport.UseVisualStyleBackColor = true;
             this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
-            // cboDepartment
-            // 
-            this.cboDepartment.FormattingEnabled = true;
-            this.cboDepartment.Location = new System.Drawing.Point(630, 18);
-            this.cboDepartment.Name = "cboDepartment";
-            this.cboDepartment.Size = new System.Drawing.Size(117, 20);
-            this.cboDepartment.TabIndex = 58;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(591, 18);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 15);
-            this.label5.TabIndex = 57;
-            this.label5.Text = "网点";
-            // 
             // btnQueryStoreDetails
             // 
-            this.btnQueryStoreDetails.Location = new System.Drawing.Point(890, 10);
+            this.btnQueryStoreDetails.Location = new System.Drawing.Point(15, 45);
             this.btnQueryStoreDetails.Name = "btnQueryStoreDetails";
-            this.btnQueryStoreDetails.Size = new System.Drawing.Size(70, 28);
+            this.btnQueryStoreDetails.Size = new System.Drawing.Size(69, 25);
             this.btnQueryStoreDetails.TabIndex = 56;
             this.btnQueryStoreDetails.Text = "查 询";
             this.btnQueryStoreDetails.UseVisualStyleBackColor = true;
             this.btnQueryStoreDetails.Click += new System.EventHandler(this.btnQueryStoreDetails_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.cboChildType);
+            this.groupBox2.Controls.Add(this.cboOperator);
+            this.groupBox2.Controls.Add(this.cboType);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.dptEnd);
+            this.groupBox2.Controls.Add(this.cboDepartment);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.dtpBegin);
+            this.groupBox2.Location = new System.Drawing.Point(197, 3);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(585, 75);
+            this.groupBox2.TabIndex = 60;
+            this.groupBox2.TabStop = false;
+            // 
+            // cboChildType
+            // 
+            this.cboChildType.FormattingEnabled = true;
+            this.cboChildType.Location = new System.Drawing.Point(406, 46);
+            this.cboChildType.Name = "cboChildType";
+            this.cboChildType.Size = new System.Drawing.Size(159, 21);
+            this.cboChildType.TabIndex = 53;
+            // 
             // cboOperator
             // 
             this.cboOperator.FormattingEnabled = true;
-            this.cboOperator.Location = new System.Drawing.Point(795, 16);
+            this.cboOperator.Location = new System.Drawing.Point(452, 12);
             this.cboOperator.Name = "cboOperator";
-            this.cboOperator.Size = new System.Drawing.Size(91, 20);
+            this.cboOperator.Size = new System.Drawing.Size(113, 21);
             this.cboOperator.TabIndex = 55;
+            // 
+            // cboType
+            // 
+            this.cboType.FormattingEnabled = true;
+            this.cboType.Location = new System.Drawing.Point(264, 46);
+            this.cboType.Name = "cboType";
+            this.cboType.Size = new System.Drawing.Size(113, 21);
+            this.cboType.TabIndex = 51;
+            this.cboType.SelectedIndexChanged += new System.EventHandler(this.cboType_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(746, 18);
+            this.label4.Location = new System.Drawing.Point(403, 12);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 15);
             this.label4.TabIndex = 54;
             this.label4.Text = "操作员";
             // 
-            // cboChildType
-            // 
-            this.cboChildType.FormattingEnabled = true;
-            this.cboChildType.Location = new System.Drawing.Point(508, 18);
-            this.cboChildType.Name = "cboChildType";
-            this.cboChildType.Size = new System.Drawing.Size(91, 20);
-            this.cboChildType.TabIndex = 53;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(380, 18);
+            this.label3.Location = new System.Drawing.Point(215, 47);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 15);
             this.label3.TabIndex = 52;
             this.label3.Text = "类型";
             // 
-            // cboType
-            // 
-            this.cboType.FormattingEnabled = true;
-            this.cboType.Location = new System.Drawing.Point(417, 18);
-            this.cboType.Name = "cboType";
-            this.cboType.Size = new System.Drawing.Size(85, 20);
-            this.cboType.TabIndex = 51;
-            this.cboType.SelectedIndexChanged += new System.EventHandler(this.cboType_SelectedIndexChanged);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(238, 21);
+            this.label2.Location = new System.Drawing.Point(215, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 15);
             this.label2.TabIndex = 50;
@@ -585,27 +589,45 @@
             // 
             this.dptEnd.CustomFormat = "yyyy-MM-dd";
             this.dptEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dptEnd.Location = new System.Drawing.Point(275, 18);
+            this.dptEnd.Location = new System.Drawing.Point(264, 11);
             this.dptEnd.Name = "dptEnd";
-            this.dptEnd.Size = new System.Drawing.Size(99, 21);
+            this.dptEnd.Size = new System.Drawing.Size(110, 21);
             this.dptEnd.TabIndex = 49;
+            // 
+            // cboDepartment
+            // 
+            this.cboDepartment.FormattingEnabled = true;
+            this.cboDepartment.Location = new System.Drawing.Point(78, 47);
+            this.cboDepartment.Name = "cboDepartment";
+            this.cboDepartment.Size = new System.Drawing.Size(117, 21);
+            this.cboDepartment.TabIndex = 58;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(104, 22);
+            this.label1.Location = new System.Drawing.Point(41, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(31, 15);
             this.label1.TabIndex = 48;
             this.label1.Text = "开始";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(41, 47);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(31, 15);
+            this.label5.TabIndex = 57;
+            this.label5.Text = "网点";
+            // 
             // dtpBegin
             // 
             this.dtpBegin.CustomFormat = "yyyy-MM-dd";
-            this.dtpBegin.Location = new System.Drawing.Point(141, 19);
+            this.dtpBegin.Location = new System.Drawing.Point(78, 14);
             this.dtpBegin.Name = "dtpBegin";
-            this.dtpBegin.Size = new System.Drawing.Size(91, 21);
+            this.dtpBegin.Size = new System.Drawing.Size(117, 20);
             this.dtpBegin.TabIndex = 47;
             // 
             // groupBox1
@@ -615,7 +637,7 @@
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(882, 690);
+            this.groupBox1.Size = new System.Drawing.Size(882, 748);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "出库列表";
@@ -624,7 +646,7 @@
             // 
             this.sptcOutStore.Dock = System.Windows.Forms.DockStyle.Fill;
             this.sptcOutStore.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
-            this.sptcOutStore.Location = new System.Drawing.Point(2, 16);
+            this.sptcOutStore.Location = new System.Drawing.Point(2, 15);
             this.sptcOutStore.Name = "sptcOutStore";
             this.sptcOutStore.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -635,7 +657,8 @@
             // sptcOutStore.Panel2
             // 
             this.sptcOutStore.Panel2.Controls.Add(this.grdOutStores);
-            this.sptcOutStore.Size = new System.Drawing.Size(878, 672);
+            this.sptcOutStore.Size = new System.Drawing.Size(878, 731);
+            this.sptcOutStore.SplitterDistance = 90;
             this.sptcOutStore.TabIndex = 48;
             // 
             // grdOutStores
@@ -645,7 +668,7 @@
             this.grdOutStores.Location = new System.Drawing.Point(0, 0);
             this.grdOutStores.Name = "grdOutStores";
             this.grdOutStores.RowTemplate.Height = 23;
-            this.grdOutStores.Size = new System.Drawing.Size(878, 618);
+            this.grdOutStores.Size = new System.Drawing.Size(878, 637);
             this.grdOutStores.TabIndex = 1;
             this.grdOutStores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdOutStores_CellClick);
             this.grdOutStores.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.grdOutStores_CellFormatting);
@@ -664,15 +687,15 @@
             // sptcMain.Panel2
             // 
             this.sptcMain.Panel2.Controls.Add(this.groupBox1);
-            this.sptcMain.Size = new System.Drawing.Size(1370, 690);
+            this.sptcMain.Size = new System.Drawing.Size(1370, 748);
             this.sptcMain.SplitterDistance = 484;
             this.sptcMain.TabIndex = 3;
             // 
             // frmOutStore
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1370, 692);
+            this.ClientSize = new System.Drawing.Size(1370, 750);
             this.Controls.Add(this.sptcMain);
             this.Name = "frmOutStore";
             this.Padding = new System.Windows.Forms.Padding(0, 2, 0, 0);
@@ -712,7 +735,9 @@
             this.sptOther.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdOther)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.sptcOutStore.Panel1.ResumeLayout(false);
             this.sptcOutStore.Panel2.ResumeLayout(false);
@@ -774,5 +799,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dptEnd;
         private System.Windows.Forms.Button btnExport;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

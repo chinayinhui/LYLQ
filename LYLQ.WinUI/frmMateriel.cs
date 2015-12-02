@@ -122,7 +122,7 @@ namespace LYLQ.WinUI
                 //Add
                 MaterialModel matModel = new MaterialModel();
                 matModel.Name = this.txtMatName.Text.Trim();
-                matModel.Code = GetCode(); // this.txtMatCode.Text.Trim();
+                //matModel.Code = GetCode(); // this.txtMatCode.Text.Trim();
                 matModel.CreatedBy = UIContext.LoginUser.Account;
                 matModel.CreatedDate = DateTime.Now;
                 matModel.UpdatedBy = UIContext.LoginUser.Account;
@@ -148,6 +148,15 @@ namespace LYLQ.WinUI
                 {
                     matModel.Type = this.rboJB_ZKPZ.Tag.ToString();
                 }
+
+                var mats = matModel.GetByType(matModel.Type);
+                var number = 1;
+                if (mats != null && mats.Count > 0)
+                {
+                    number = mats.Count + 1;                    
+                }
+                matModel.Code = matModel.Type + number.ToString().PadLeft(2, '0');
+                
 
                 _materielModel.Create(matModel);
                 btnClear_Click(null, null);

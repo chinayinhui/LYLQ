@@ -1,0 +1,25 @@
+﻿@model LYLQ.WebUI.Models.UserModel
+@{
+    ViewBag.Title = "用户登陆";
+}
+
+@using(@Html.BeginForm())
+{ 
+    @Html.AntiForgeryToken()
+    <div>
+        <div>
+            <dl>
+                <dt>用 户：</dt>
+                <dd>@Html.TextBoxFor(user => user.Account)</dd>
+            </dl>
+            <dl>
+                <dt>密 码：</dt>
+                <dd>@Html.TextBoxFor(user => user.Password)</dd>
+            </dl>
+        </div>
+        <div>@Html.ValidationMessage("errormsg")</div>
+        <div>
+            <p><input type="submit" value="登 录" /></p>
+        </div>
+    </div>
+}
