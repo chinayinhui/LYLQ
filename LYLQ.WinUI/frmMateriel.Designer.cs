@@ -113,6 +113,7 @@
             this.btnClearAll.TabIndex = 17;
             this.btnClearAll.Text = "清空（入库，出库）";
             this.btnClearAll.UseVisualStyleBackColor = true;
+            this.btnClearAll.Visible = false;
             this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
             // 
             // label4
