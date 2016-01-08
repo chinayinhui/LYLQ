@@ -15,10 +15,12 @@ namespace LYLQ.SqLite
             {
                 var dbStocks = from stock in ctx.Stocks
                               where stock.InstoreId == id 
-                              orderby UpdatedDate descending
+                              //orderby UpdatedDate descending
                               select stock;
 
-                return dbStocks.FirstOrDefault();
+                var stocks = dbStocks.ToList().OrderByDescending(st => st.UpdatedDate);
+
+                return stocks.FirstOrDefault();
             }
         }
 
