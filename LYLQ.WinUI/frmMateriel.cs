@@ -150,12 +150,12 @@ namespace LYLQ.WinUI
                 }
 
                 var mats = matModel.GetByType(matModel.Type);
-                var number = 1;
-                if (mats != null && mats.Count > 0)
-                {
-                    number = mats.Count + 1;                    
-                }
-                matModel.Code = matModel.Type + number.ToString().PadLeft(2, '0');
+                //var number = 1;
+                //if (mats != null && mats.Count > 0)
+                //{
+                //    number = mats.Count + 1;                    
+                //}
+                matModel.Code = matModel.Type + "_" + Guid.NewGuid().ToString();
                 
 
                 _materielModel.Create(matModel);
