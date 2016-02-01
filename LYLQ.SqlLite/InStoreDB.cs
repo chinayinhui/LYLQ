@@ -198,7 +198,7 @@ namespace LYLQ.SqLite
             using (var ctx = new LYLQEntities())
             {
                 var dbInsts = from dbInst in ctx.InStores
-                              where (dbInst.UpdatedDate >= beginDate && dbInst.UpdatedDate <= endDate) && 
+                              where (dbInst.CreatedDate >= beginDate && dbInst.CreatedDate <= endDate) && 
                                     (type != null ? dbInst.Type == type : 1== 1) && 
                                     (code != null ? dbInst.Code == code : 1== 1) &&
                                     (operatorStoreIn != null ? dbInst.UpdatedBy == operatorStoreIn : 1 == 1)

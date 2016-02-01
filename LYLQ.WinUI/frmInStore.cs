@@ -96,12 +96,12 @@ namespace LYLQ.WinUI
             grd.Columns.Add(txtTypeCol);
 
             DataGridViewTextBoxColumn txtDateCol = new DataGridViewTextBoxColumn();
-            txtDateCol.DataPropertyName = "UpdatedDate";
+            txtDateCol.DataPropertyName = "CreatedDate";
             txtDateCol.HeaderText = "日 期";            
             grd.Columns.Add(txtDateCol);
 
             DataGridViewTextBoxColumn txtUpdatedByCol = new DataGridViewTextBoxColumn();
-            txtUpdatedByCol.DataPropertyName = "UpdatedBy";
+            txtUpdatedByCol.DataPropertyName = "CreatedBy";
             txtUpdatedByCol.HeaderText = "操作员";
             grd.Columns.Add(txtUpdatedByCol);
 
@@ -476,7 +476,7 @@ namespace LYLQ.WinUI
             //    e.Value = _materialDicts[e.Value.ToString()];
             //}
 
-            //if (grd.Columns[e.ColumnIndex].DataPropertyName == "UpdatedBy" && e.Value != null)
+            //if (grd.Columns[e.ColumnIndex].DataPropertyName == "CreatedBy" && e.Value != null)
             //{
             //    foreach (var user in userModels)
             //    {
@@ -486,7 +486,7 @@ namespace LYLQ.WinUI
             //    }
             //}
 
-            if (grd.Columns[e.ColumnIndex].DataPropertyName == "UpdatedDate")
+            if (grd.Columns[e.ColumnIndex].DataPropertyName == "CreatedDate")
             {
                 e.Value = e.Value.ToString().Split(' ')[0];
             }
@@ -565,9 +565,9 @@ namespace LYLQ.WinUI
                 {
                     foreach (var user in userModels)
                     {
-                        if (instoreModel.UpdatedBy.Equals(user.Account))
+                        if (instoreModel.CreatedBy.Equals(user.Account))
                         {
-                            instoreModel.UpdatedBy = user.Name;
+                            instoreModel.CreatedBy = user.Name;
                         }
                     }
                 }
